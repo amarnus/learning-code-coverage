@@ -1,6 +1,6 @@
 # learning-code-coverage
 
-Companion repo for a blog post.
+Companion code repo for a blog post.
 
 ## Setup
 
