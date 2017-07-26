@@ -10,8 +10,8 @@ export function parseCode(source: string): File {
     return parser.parse(source, { sourceType: 'module' });
 };
 
-export function readCode() {
-    return readFileSync(`${ __dirname }/../source.js`).toString('utf8');
+export function readCode(filename: string) {
+    return readFileSync(filename).toString('utf8');
 };
 
 export function isStatement(path: NodePath): boolean {
@@ -51,4 +51,14 @@ export function generateCode(tree: File): string {
         comments: false
     });
     return code;
+};
+
+export function toLCOV(coverageReport: any): string {
+    let report = 'SF:source.js\n';
+    _.each(coverageReport.c, (counter, statementId) => {
+        const { line } = coverageReport.statementMap[statementId].start;
+        report += `DA:${ line },${ counter }\n`;
+    });
+    report += 'end_of_record';
+    return report;
 };

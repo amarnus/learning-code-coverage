@@ -22,4 +22,10 @@ $ node bin/stats.js
 
 # instrument
 $ node bin/instrument.js > source.instrumented.js
+
+# test
+$ npm test
+
+# visualize
+$ genhtml -o html/ ./lcov.info
 ```

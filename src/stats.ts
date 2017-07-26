@@ -10,7 +10,7 @@ import {
 
 let statementCounter = 0;
 
-const source: string = readCode();
+const source: string = readCode(__dirname + '../source.js');
 const tree: File = parseCode(source);
 
 traverse(tree, {

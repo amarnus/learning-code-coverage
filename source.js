@@ -25,7 +25,7 @@ module.exports = (amount, percentagesByPeople) => {
     }
 
     each(people, person => {
-        splitAmountByPeople[person] = round((percentagesByPeople[person] * amount) / 100, 2);
+        splitAmountByPeople[person] = round((percentagesByPeople[person] * amount), 2);
     });
 
     return splitAmountByPeople;
