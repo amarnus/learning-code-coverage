@@ -1,6 +1,6 @@
 # learning-code-coverage
 
-Companion code repo for a blog post.
+Companion code repo for a blog post series: https://engineering.semantics3.com/understanding-code-coverage-1074e8fccce0
 
 ## Setup
 
