@@ -2,8 +2,8 @@
 
 Companion code repo for a blog post series:
 
-- [Post 1](https://engineering.semantics3.com/understanding-code-coverage-1074e8fccce0)
-- [Post 2](https://engineering.semantics3.com/understanding-javascript-code-coverage-part-2-9aedaa5119e5)
+- [Post 1](https://medium.com/engineering-semantics3/understanding-code-coverage-1074e8fccce0)
+- [Post 2](https://medium.com/engineering-semantics3/understanding-javascript-code-coverage-part-2-9aedaa5119e5)
 
 ## Setup
 
