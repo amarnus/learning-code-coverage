@@ -30,5 +30,8 @@ $ node bin/instrument.js > source.instrumented.js
 $ npm test
 
 # visualize
+$ npm run genhtml
+
+# visualize on linux
 $ genhtml -o html/ ./lcov.info
 ```
