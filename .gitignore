@@ -2,3 +2,6 @@ bin/
 .data
 html/
 node_modules/
+lcov.info
+.idea/
+coverage/

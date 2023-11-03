@@ -9,7 +9,7 @@ class LCOVReporter extends mocha.reporters.Spec {
 
         runner.on('end', () => {
             if (__coverage__) {
-                fs.writeFileSync('./lcov.info', toLCOV(__coverage__));
+                fs.writeFileSync('./lcov.info', toLCOV(__coverage__),{flag:'w+'});
             }
         });
     }
