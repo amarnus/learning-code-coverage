@@ -54,11 +54,17 @@ export function generateCode(tree: File): string {
 };
 
 export function toLCOV(coverageReport: any): string {
+    let allLines = 0;
+    let hitLines = 0;
     let report = 'SF:source.js\n';
     _.each(coverageReport.c, (counter, statementId) => {
         const { line } = coverageReport.statementMap[statementId].start;
         report += `DA:${ line },${ counter }\n`;
+        allLines++;
+        if(counter) hitLines++;
     });
+    report += `LH:${hitLines}\n`;
+    report += `LF:${allLines}\n`;
     report += 'end_of_record';
     return report;
 };
